@@ -1,0 +1,1573 @@
+@charset "utf-8";
+
+/* webfont */
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #111111;
+    padding-top: 70px;
+}
+
+#wrap {
+    min-width: 1360px;
+    overflow: hidden;
+}
+
+/* 공통 */
+
+
+/* header */
+#header {
+    font-family: 'Paperlogy';
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    height: 70px;
+}
+
+#header .bg {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    height: 70px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.inner_bg {
+    height: 120px;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, .25), hsla(0, 0%, 95%, 0)), rgba(243, 244, 246, .6);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+#inner_header {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8px;
+}
+
+.gnb {
+    display: flex;
+    padding-top: 26px;
+}
+
+/* 호버 */
+.gnb>li>a {
+    position: relative;
+    padding: 0;
+    /* 상하 패딩 제거 */
+    line-height: 1;
+    /* 글자 높이에 맞춤 */
+    margin-right: 21px;
+}
+
+.gnb>li>a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    /* 밑줄 위치 조정: 0~ -2px */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #333333;
+    transition: width 0.3s ease;
+}
+
+.gnb>li>a:hover::after {
+    width: 100%;
+}
+
+.gnb>li>a:hover::after {
+    width: 100%;
+}
+
+/* 서브메뉴 */
+
+.submenu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, .25), hsla(0, 0%, 95%, 0)), rgba(243, 244, 246, .6);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    padding: 10px 0 15px;
+}
+
+/* 서브메뉴 위치준 곳 */
+.inner_submenu {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 5px;
+}
+
+.inner_submenu_new {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 120px;
+}
+
+.inner_submenu_product {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 277px;
+}
+
+.inner_submenu_info {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 585px;
+}
+
+.sub_nav {
+    display: flex;
+}
+
+.submenu li a {
+    display: block;
+    color: #111;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/* 서브메뉴 끝 */
+
+
+.util {
+    display: flex;
+}
+
+.util li a {
+    display: block;
+    margin-left: 22px;
+}
+
+#inner_header #slide_wrap {
+    width: 100px;
+    margin: 0 auto;
+    height: 30px;
+    position: relative;
+    top: 26px;
+    right: 95px;
+}
+
+#inner_header .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#inner_header .swiper-slide {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 위로 버튼 */
+#section {
+    height: 1px;
+    position: relative;
+}
+
+#section .topBtn {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    cursor: pointer;
+    right: 30px;
+    bottom: 50px;
+}
+
+
+/* banner */
+#banner {
+    height: 600px;
+    position: relative;
+}
+
+#banner .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#banner .swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* about */
+#about {
+    width: 1320px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#about .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 80px;
+    padding-top: 200px;
+}
+
+#about .sub_title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 72px 0;
+}
+
+#about .about_img {
+    margin: 98px 0 200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* about2 */
+#about2 {
+    font-family: 'Paperlogy';
+    font-weight: 1000;
+    background: #000;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.baout2_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 830px;
+}
+
+#about2 p {
+    font-size: 130px;
+    line-height: 60px;
+}
+
+#about2 span {
+    font-size: 55px;
+}
+
+.circle {
+    width: 7vmax;
+    height: 7vmax;
+    background-color: #FFF;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    will-change: transform;
+}
+
+/* about3 */
+#about3 {
+    width: 1920px;
+    margin: 0 auto;
+    background: #FFD3D3;
+}
+
+#inner_about3 {
+    height: 1343px;
+    padding: 200px 0;
+    box-sizing: border-box;
+}
+
+#about3 .section_1,
+#about3 .section_2 {
+    display: flex;
+}
+
+#about3 .section_1 p {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 88px;
+}
+
+#about3 .center {
+    margin: 150px 150px 200px 458px;
+}
+
+#about3 .font {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+#about3 .between1 {
+    margin: 70px 0;
+}
+
+#about3 .between2 {
+    margin-bottom: 130px;
+}
+
+#about3 div .down {
+    position: relative;
+    top: 100px;
+    left: -20px;
+}
+
+
+/* details */
+#details {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#details .center {
+    text-align: center;
+    margin-bottom: 113px;
+}
+
+#details .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 40px;
+    padding: 200px 0 20px;
+}
+
+.detail_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+#details .bold {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 7px 0 4px;
+}
+
+#details .text {
+    padding-bottom: 15px;
+}
+
+#details .details {
+    width: 784px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.details li {
+    width: 256px;
+}
+
+#details .img_wrap {
+    overflow: hidden;
+}
+
+#details .img_wrap img {
+    cursor: pointer;
+    display: block;
+    transform: scale(1, 1);
+    /* A keyframe */
+    transition: transform 0.3s;
+}
+
+#details .img_wrap img:hover {
+    transform: scale(1.1);
+    /* B keyframe */
+}
+
+
+/* new */
+#new {
+    text-align: center;
+    position: relative;
+}
+
+#new .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    padding: 200px 0 20px;
+}
+
+.new_banner {
+    margin: 123px 0 240px;
+}
+
+#new .text {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 530px;
+    left: 350px;
+}
+
+.text .banner {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+
+.text .color {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+#new .bold {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 87px;
+}
+
+#new .margin {
+    font-size: 16px;
+    margin-bottom: 124px;
+    line-height: 28px;
+}
+
+#gallery {
+    position: relative;
+    width: 744px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+
+#gallery .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#gallery .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+#gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+#gallery .swiper-button-next,
+#gallery .swiper-button-prev {
+    color: #1b1b1b !important;
+}
+
+#gallery .swiper-button-next,
+#gallery .swiper-rtl #gallery .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -100px);
+}
+
+#gallery .swiper-button-prev,
+#gallery .swiper-rtl #gallery .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, -100px);
+}
+
+#gallery .swiper-button-next,
+#gallery .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 58%);
+}
+
+#new .docking_banner {
+    margin: 220px 0;
+}
+
+
+/* gift */
+#gift {
+    color: white;
+    background: #000;
+    height: 1035px;
+    padding: 0.1px 0;
+}
+
+#inner_gift {
+    width: 1025px;
+    margin: 0 auto;
+}
+
+#gift .line {
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+#gift .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 150px 0 20px;
+}
+
+#gift .img1 {
+    display: flex;
+    margin-top: 50px;
+}
+
+#gift .img2 {
+    display: flex;
+    margin-top: 8px;
+}
+
+#gift .size {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 20px 53px 0 0;
+}
+
+/* GIFT1 */
+#gift .gift1 a {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: url('../images/gift/gift1.jpg') no-repeat center/cover;
+    transition: background-image 0.6s ease;
+}
+
+#gift .gift1 a:hover {
+    background-image: url('../images/gift/hover1.jpg');
+}
+
+/* GIFT2 */
+#gift .gift2 a {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 8px;
+    background: url('../images/gift/gift2.jpg') no-repeat center/cover;
+    transition: background-image 0.6s ease;
+}
+
+#gift .gift2 a:hover {
+    background-image: url('../images/gift/hover2.jpg');
+}
+
+/* GIFT3 */
+#gift .gift3 a {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: url('../images/gift/gift3.jpg') no-repeat center/cover;
+    transition: background-image 0.6s ease;
+}
+
+#gift .gift3 a:hover {
+    background-image: url('../images/gift/hover3.jpg');
+}
+
+/* GIFT4 */
+#gift .gift4 a {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 8px 100px 0;
+    background: url('../images/gift/gift4.jpg') no-repeat center/cover;
+    transition: background-image 0.6s ease;
+}
+
+#gift .gift4 a:hover {
+    background-image: url('../images/gift/hover4.jpg');
+}
+
+/* GIFT5 */
+#gift .gift5 a {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: url('../images/gift/gift5.jpg') no-repeat center/cover;
+    transition: background-image 0.6s ease;
+}
+
+#gift .gift5 a:hover {
+    background-image: url('../images/gift/hover5.jpg');
+}
+
+/* pack */
+#pack {
+    background: #8AC1DE;
+    text-align: center;
+    color: #111111;
+    padding-top: 120px;
+}
+
+#pack img {
+    display: block;
+}
+
+#pack .pack_text {
+    background: #D1D1D1;
+    width: 485px;
+    height: 284px;
+}
+
+#pack .pack_text .font {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+#pack .pack_box {
+    margin: 0 auto;
+    border: #111111 solid 25px;
+    width: 485px;
+}
+
+/* 애니메이션만들기 */
+@keyframes flow1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes flow2 {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#flow {
+    overflow: hidden;
+    margin: 100px 0 0 0;
+    height: 60px;
+}
+
+#flow p {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 50px;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+#flow .track2 {
+    animation: flow2 10s infinite linear;
+}
+
+
+
+
+/*  product */
+#product {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#product .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    padding: 200px 0;
+    text-align: center;
+}
+
+#product .sub_title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#product .between {
+    margin: 162px 0 60px;
+}
+
+.portable,
+.table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.inner_portable,
+.inner_table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1400px;
+    gap: 100px;
+}
+
+/* 포터블 슬라이드 */
+.portable_slide {
+    width: 710px;
+    height: 350px;
+    position: relative;
+}
+
+.portable_slide .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.portable_slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portable_slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portable_slide .swiper-button-next,
+.portable_slide .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -80px);
+}
+
+.portable_slide .swiper-button-next,
+.portable_slide .swiper-button-prev {
+    color: #111111;
+}
+
+.portable_slide .swiper-button-prev,
+.portable_slide .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, -80px);
+}
+
+/* 테이블 슬라이드 */
+.table_slide {
+    width: 710px;
+    height: 350px;
+    position: relative;
+}
+
+.table_slide .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.table_slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table_slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.table_slide .swiper-button-next,
+.table_slide .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -80px);
+}
+
+.table_slide .swiper-button-next,
+.table_slide .swiper-button-prev {
+    color: #111111;
+}
+
+.table_slide .swiper-button-prev,
+.table_slide .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, -80px);
+}
+
+/* 호버 */
+.color_chip {
+    display: inline-block;
+    width: 14px;
+    /* 동그라미 크기 */
+    height: 14px;
+    border-radius: 50%;
+    /* 완전 동그라미 */
+    margin-right: 5px;
+    /* 간격 */
+}
+
+.img_wrap {
+
+    overflow: hidden;
+}
+
+.img_wrap img {
+    width: 100%;
+    display: block;
+}
+
+.cover_wrap {
+    position: relative;
+}
+
+.cover {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* A keyframe */
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* 밑에서 위로 올라오는 호버 */
+.cover_wrap .cover .transform {
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+
+.cover_wrap:hover .cover .transform {
+    transform: translateY(0px);
+}
+
+/* 밑에서 위로 올라오는 호버 끝 */
+
+.cover .name {
+    font-family: 'Paperlogy';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cover .price {
+    margin: 10px 0 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cover .link {
+    position: absolute;
+    top: 220px;
+    margin-top: 60px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cover .link .btn {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 1px 30px;
+}
+
+.cover .link .btn:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: #646464;
+}
+
+.cover_wrap:hover .cover {
+    /* A keyframe */
+    opacity: 1;
+}
+
+
+/* store */
+#store {
+    background: #111 url(../images/store/bg.png) center no-repeat;
+    height: 1389px;
+}
+
+#inner_store {
+    width: 1258px;
+    margin: 0 auto;
+}
+
+#store .content {
+    color: white;
+    padding: 150px 0;
+}
+
+.store_inside {
+    position: relative;
+}
+
+.content .title_font {
+    font-family: 'Paperlogy';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.content .between {
+    font-family: 'Paperlogy';
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin: 75px 0;
+}
+
+.content .content_font {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#store .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 80px 0 150px;
+    text-align: center;
+}
+
+/* store_inside */
+.inside_img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside_size {
+    font-family: 'Paperlogy';
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.inside_img .section1 {
+    width: 264px;
+    height: 304px;
+    padding-top: 140px;
+}
+
+.inside_img .section2 {
+    width: 655px;
+    height: 304px;
+}
+
+.inside_img .section2 .top {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside_img .section2 .bottom {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+
+.inside_img .section3 {
+    width: 300px;
+    padding-top: 120px;
+}
+
+.inside_font {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.position {
+    position: absolute;
+    top: 770px;
+    z-index: 999;
+}
+
+/* 스토어 통째로 위치잡는거 */
+.inside_img {
+    height: 631px;
+    position: relative;
+    top: 10px;
+    line-height: 35px;
+}
+
+#store2 div {
+    margin-top: 450px;
+}
+
+/* flagship */
+#flagship {
+    color: white;
+}
+
+#flagship .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 40px;
+    padding: 200px 0;
+    text-align: center;
+}
+
+#flagship .top {
+    background: #000;
+    height: 400px;
+}
+
+#flagship .flagship_store {
+    height: 1400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/store/flagship.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#flagship .inner_bottom {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#flagship .bottom {
+    background: #000;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#flagship .weight {
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+#flagship .border a {
+    border-bottom: 1px solid white;
+}
+
+#flagship .align {
+    text-align: right;
+}
+
+/* info */
+#info {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    height: 900px;
+}
+
+#info .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 30px;
+    padding: 200px 0 20px;
+}
+
+#info .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+#info .coupon {
+    width: 921px;
+    height: 378px;
+    color: white;
+    background: url(../images/info/coupon_bg.jpg) no-repeat center;
+}
+
+#info .coupon .between {
+    font-weight: 600;
+    margin: 71px 0 14px;
+}
+
+#info .coupon .bold {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+#info .event {
+    width: 387px;
+    height: 378px;
+    background-color: #B9B7B5;
+    text-align: left;
+}
+
+#info .event p {
+    padding-left: 70px;
+}
+
+#info .event .sub_title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 40px;
+    margin: 100px 0 88px;
+}
+
+/* qna */
+#qna {
+    color: white;
+    width: 1924px;
+    height: 847px;
+    margin: 150px auto 0;
+    background: url(../images/info/Q&A.jpg) no-repeat center;
+}
+
+#qna .center {
+    text-align: center;
+}
+
+#qna .title {
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 40px;
+    padding: 200px 0 15px;
+}
+
+#qna .ask_wrap {
+    width: 1540px;
+    margin: 0 auto;
+    margin-top: 130px;
+
+}
+
+#qna .ask {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#qna .ask li {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    /* 사파리 호환 */
+    width: 300px;
+    height: 255px;
+    padding: 40px 30px 40px 30px;
+    box-sizing: border-box;
+}
+
+#qna .ask li:nth-child(2),
+#qna .ask li:nth-child(4) {
+    position: relative;
+    top: 30px;
+}
+
+.ask .ask_title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ask .ask_content {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+}
+
+/* 빛다정 */
+.ask .id1 {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 20px 0 40px;
+}
+
+/* 라이트나잇 */
+.ask .id2 {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 20px 0 50px;
+}
+
+/* 오빛 */
+.ask .id3 {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 20px 0 68px;
+}
+
+/* 조명초보 */
+.ask .id4 {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 20px 0 50px;
+}
+
+/* 유빛나 */
+.ask .id5 {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    margin: 20px 0 25px;
+}
+
+.ask .ask_flex {
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ask .ask_flex img {
+    width: 18px;
+    height: 18px;
+    margin: 2px 8px 0 0;
+}
+
+.ask .img_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FAQ */
+#faq {
+    background: #eee;
+    height: 1100px;
+}
+
+#inner_faq {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+#faq .title {
+    text-align: center;
+    font-family: 'Paperlogy';
+    font-weight: 700;
+    font-size: 40px;
+    padding: 200px 0 140px;
+}
+
+.faq_intro {
+    margin: 20px 0 15px 10px;
+    font-size: 16px;
+}
+
+#faq .faq_flex {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#faq .qna {
+    width: 550px;
+}
+
+/* 게시판 */
+.qna {
+    font-size: 12px;
+    line-height: 27px;
+    margin: 0 auto;
+}
+
+.qna li {
+    margin-bottom: 15px;
+}
+
+.question {
+    width: 540px;
+    height: 48px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 30px;
+    box-sizing: border-box;
+}
+
+.question .faq_title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.question p {
+    display: flex;
+}
+
+.question span {
+    display: block;
+}
+
+.question span img {
+    transition: transform 0.5s;
+}
+
+.turn {
+    transform: rotate(180deg);
+}
+
+.answer {
+    color: black;
+    display: flex;
+    padding: 17px 25px 5px;
+}
+
+.answer span {
+    font-weight: 700;
+    margin-right: 17px;
+}
+
+.answer .jump {
+    margin-left: 10px;
+}
+
+/* 게시판 끝 */
+
+
+
+
+#faq .order {
+    padding: 170px 0 0 50px;
+    box-sizing: border-box;
+    width: 550px;
+    height: 441px;
+    line-height: 18px;
+    background: url(../images/info/FAQ.jpg) no-repeat center;
+}
+
+#faq .order .faq_title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#faq .order .faq_between {
+    margin-top: 10px;
+}
+
+#faq .order .btn {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 15px 70px;
+    margin: 20px 0;
+}
+
+#faq .line {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.line li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: white;
+    margin: 0 11px;
+}
+
+.line li:nth-child(1)::before {
+    display: none;
+}
+
+/* footer */
+#footer {
+    width: 1300px;
+    margin: 0 auto;
+    height: 450px;
+}
+
+.footer_content {
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer_content p a {
+    display: block;
+    margin-bottom: 22px;
+    font-size: 12px;
+}
+
+.footer_bold {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 60px 0 32px;
+}
+
+.footer_link {
+    font-weight: 700;
+}
+
+.footer_flex {
+    font-size: 10px;
+    line-height: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_line {
+    margin-top: 50px;
+    display: flex;
+}
+
+.footer_line li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #111;
+    margin: 0 12px;
+}
+
+.footer_line li:nth-child(1)::before {
+    display: none;
+}
+
+.footer_logo {
+    margin-top: 22px;
+}
