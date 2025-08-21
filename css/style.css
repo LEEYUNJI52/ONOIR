@@ -161,7 +161,7 @@ body {
 
 .gnb {
     display: flex;
-    padding-top: 26px;
+    padding-top: 35px;
 }
 
 /* 호버 */
@@ -1587,4 +1587,3 @@ body {
 .footer_logo {
     margin-top: 22px;
 }
-
