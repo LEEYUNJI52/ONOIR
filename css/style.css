@@ -145,8 +145,11 @@ body {
 #inner_header {
     width: 1320px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+}
+
+.logo_wrap {
+    position: relative;
+
 }
 
 .logo {
@@ -169,18 +172,21 @@ body {
     line-height: 1;
     /* 글자 높이에 맞춤 */
     margin-right: 21px;
+    display: block;
+    padding-bottom: 30px;
 }
 
 .gnb>li>a::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: 27px;
     /* 밑줄 위치 조정: 0~ -2px */
     left: 0;
     width: 0;
     height: 2px;
     background: #333333;
     transition: width 0.3s ease;
+    display: block;
 }
 
 .gnb>li>a:hover::after {
@@ -210,28 +216,32 @@ body {
     width: 1320px;
     margin: 0 auto;
     display: flex;
-    padding-left: 5px;
+    padding-left: 0px;
+    box-sizing: border-box;
 }
 
 .inner_submenu_new {
     width: 1320px;
     margin: 0 auto;
     display: flex;
-    padding-left: 120px;
+    padding-left: 62px;
+    box-sizing: border-box;
 }
 
 .inner_submenu_product {
     width: 1320px;
     margin: 0 auto;
     display: flex;
-    padding-left: 277px;
+    padding-left: 138px;
+    box-sizing: border-box;
 }
 
 .inner_submenu_info {
     width: 1320px;
     margin: 0 auto;
     display: flex;
-    padding-left: 585px;
+    padding-left: 295px;
+    box-sizing: border-box;
 }
 
 .sub_nav {
@@ -245,12 +255,17 @@ body {
     margin-bottom: 5px;
 }
 
-
 /* 서브메뉴 끝 */
 
+.header_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 .util {
     display: flex;
+
 }
 
 .util li a {
@@ -1163,7 +1178,6 @@ body {
     background-position: center;
     background-image: url(../images/store/flagship.jpg);
     background-attachment: fixed;
-    background-size: cover;
 }
 
 #flagship .inner_bottom {
@@ -1253,6 +1267,11 @@ body {
 }
 
 /* qna */
+#qna_wrap {
+    display: flex;
+    justify-content: center;
+}
+
 #qna {
     color: white;
     width: 1924px;
@@ -1276,13 +1295,11 @@ body {
     width: 1540px;
     margin: 0 auto;
     margin-top: 130px;
-
 }
 
 #qna .ask {
     display: flex;
     justify-content: space-between;
-
 
 }
 
