@@ -27,11 +27,38 @@
                 <div class="inner_bg"></div>
             </div>
             <div id="inner_header">
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="images/header/logo.svg" alt="로고">
-                    </a>
-                </h1>
+                <div class="logo_wrap">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="images/header/logo.svg" alt="로고">
+                        </a>
+                    </h1>
+                    <div class="header_right">
+                        <div id="slide_wrap">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">01 MOMO</div>
+                                    <div class="swiper-slide">02 BOLLA</div>
+                                    <div class="swiper-slide">03 MOONY</div>
+                                    <div class="swiper-slide">04 TORY</div>
+                                    <div class="swiper-slide">05 HANU</div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="util">
+                            <li class="util-search">
+                                <a href="javascript:return false;">
+                                    <img src="images/header/search.png" alt="">
+                                </a>
+                            </li>
+                            <li><a href="javascript:return false;"><img src="images/header/shopping.png" alt=""></a>
+                            </li>
+                            <li><a href="javascript:return false;"><img src="images/header/mypage.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="header_left">
                     <ul class="gnb">
                         <li><a href="#about">ABOUT</a>
@@ -95,29 +122,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header_right">
-                    <div id="slide_wrap">
-                        <!-- Swiper -->
-                        <div class="swiper mySwiper1">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">01 MOMO</div>
-                                <div class="swiper-slide">02 BOLLA</div>
-                                <div class="swiper-slide">03 MOONY</div>
-                                <div class="swiper-slide">04 TORY</div>
-                                <div class="swiper-slide">05 HANU</div>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="util">
-                        <li class="util-search">
-                            <a href="javascript:return false;">
-                                <img src="images/header/search.png" alt="">
-                            </a>
-                        </li>
-                        <li><a href="javascript:return false;"><img src="images/header/shopping.png" alt=""></a></li>
-                        <li><a href="javascript:return false;"><img src="images/header/mypage.png" alt=""></a></li>
-                    </ul>
-                </div>
+
             </div>
         </div>
         <!-- header 끝 -->
@@ -1027,87 +1032,89 @@
         </div>
 
         <!-- qna -->
-        <div id="qna">
-            <div class="center" data-aos="fade-up" data-aos-duration="1000">
-                <p class="title">Q&A</p>
-                <p>함께 나누는 조명 이야기</p>
-            </div>
-            <div class="ask_wrap">
-                <ul class="ask">
-                    <li data-aos="fade-up">
-                        <p class="ask_title">완충하면 얼마나 사용할 수 있나요?</p>
-                        <p class="id1">1단계 밝기로 두면 오래 간다던데, 실제 사용 시간은
-                            얼마나 되나요? 매일 저녁마다 켜두고 싶어서요.
-                        </p>
-                        <div class="ask_flex">
-                            <div class="img_flex">
-                                <img src="images/info/id.png" alt="">
-                                <p>빛다정</p>
+        <div id="qna_wrap">
+            <div id="qna">
+                <div class="center" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="title">Q&A</p>
+                    <p>함께 나누는 조명 이야기</p>
+                </div>
+                <div class="ask_wrap">
+                    <ul class="ask">
+                        <li data-aos="fade-up">
+                            <p class="ask_title">완충하면 얼마나 사용할 수 있나요?</p>
+                            <p class="id1">1단계 밝기로 두면 오래 간다던데, 실제 사용 시간은
+                                얼마나 되나요? 매일 저녁마다 켜두고 싶어서요.
+                            </p>
+                            <div class="ask_flex">
+                                <div class="img_flex">
+                                    <img src="images/info/id.png" alt="">
+                                    <p>빛다정</p>
+                                </div>
+                                <div>
+                                    <p>2025.07.10</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>2025.07.10</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <p class="ask_title">포장 그대로 선물해도 괜찮을까요?</p>
+                            <p class="id2">친구 생일 선물로 주문했는데 따로 포장 안 해도 괜찮을지 궁금해요.받는 사람이 감동할 수 있었으면 해요 :)
+                            </p>
+                            <div class="ask_flex">
+                                <div class="img_flex">
+                                    <img src="images/info/id.png" alt="">
+                                    <p>라이트나잇</p>
+                                </div>
+                                <div>
+                                    <p>2025.06.28</p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="200">
-                        <p class="ask_title">포장 그대로 선물해도 괜찮을까요?</p>
-                        <p class="id2">친구 생일 선물로 주문했는데 따로 포장 안 해도 괜찮을지 궁금해요.받는 사람이 감동할 수 있었으면 해요 :)
-                        </p>
-                        <div class="ask_flex">
-                            <div class="img_flex">
-                                <img src="images/info/id.png" alt="">
-                                <p>라이트나잇</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <p class="ask_title">깜빡임이나 눈부심은 없나요?</p>
+                            <p class="id3">오래 켜두면 눈이 아픈 조명이 있어서 혹시 오느아 조명은 플리커나 블루라이트 걱정 없을까요?
+                            </p>
+                            <div class="ask_flex">
+                                <div class="img_flex">
+                                    <img src="images/info/id.png" alt="">
+                                    <p>오빛</p>
+                                </div>
+                                <div>
+                                    <p>2025.07.03</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>2025.06.28</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="600">
+                            <p class="ask_title">충전은 어떻게 하나요?</p>
+                            <p class="id4">무선이라 너무 좋긴 한데 혹시 전용 충전기 써야
+                                하나요? 평소 쓰던 C타입 케이블로도 되면 좋겠어요!
+                            </p>
+                            <div class="ask_flex">
+                                <div class="img_flex">
+                                    <img src="images/info/id.png" alt="">
+                                    <p>조명초보</p>
+                                </div>
+                                <div>
+                                    <p>2025.06.20</p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        <p class="ask_title">깜빡임이나 눈부심은 없나요?</p>
-                        <p class="id3">오래 켜두면 눈이 아픈 조명이 있어서 혹시 오느아 조명은 플리커나 블루라이트 걱정 없을까요?
-                        </p>
-                        <div class="ask_flex">
-                            <div class="img_flex">
-                                <img src="images/info/id.png" alt="">
-                                <p>오빛</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="800">
+                            <p class="ask_title">색 온도 조절도 되나요?</p>
+                            <p class="id5">조명에서 나는 빛이 너무 따뜻해서 좋아요.
+                                <br>노란빛이 은은하게 퍼지는데, 때론 조금 더 밝게도 쓰고 싶을 때가 있거든요. 상황에 따라 조절할 수 있으면 더 좋을 것 같아요.
+                            </p>
+                            <div class="ask_flex">
+                                <div class="img_flex">
+                                    <img src="images/info/id.png" alt="">
+                                    <p>유빛나</p>
+                                </div>
+                                <div>
+                                    <p>2025.07.31</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>2025.07.03</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="600">
-                        <p class="ask_title">충전은 어떻게 하나요?</p>
-                        <p class="id4">무선이라 너무 좋긴 한데 혹시 전용 충전기 써야
-                            하나요? 평소 쓰던 C타입 케이블로도 되면 좋겠어요!
-                        </p>
-                        <div class="ask_flex">
-                            <div class="img_flex">
-                                <img src="images/info/id.png" alt="">
-                                <p>조명초보</p>
-                            </div>
-                            <div>
-                                <p>2025.06.20</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="800">
-                        <p class="ask_title">색 온도 조절도 되나요?</p>
-                        <p class="id5">조명에서 나는 빛이 너무 따뜻해서 좋아요.
-                            <br>노란빛이 은은하게 퍼지는데, 때론 조금 더 밝게도 쓰고 싶을 때가 있거든요. 상황에 따라 조절할 수 있으면 더 좋을 것 같아요.
-                        </p>
-                        <div class="ask_flex">
-                            <div class="img_flex">
-                                <img src="images/info/id.png" alt="">
-                                <p>유빛나</p>
-                            </div>
-                            <div>
-                                <p>2025.07.31</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
