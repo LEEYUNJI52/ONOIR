@@ -1174,7 +1174,6 @@ body {
 
 #flagship .flagship_store {
     height: 1400px;
-    background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/store/flagship.jpg);
     background-attachment: fixed;
@@ -1588,3 +1587,4 @@ body {
 .footer_logo {
     margin-top: 22px;
 }
+
