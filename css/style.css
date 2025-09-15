@@ -227,10 +227,7 @@ body {
     padding-left: 62px;
     box-sizing: border-box;
 }
-.inner_submenu_new:hover{
-    font-weight: bold;
-}    
-
+ 
 .inner_submenu_product {
     width: 1320px;
     margin: 0 auto;
@@ -1590,6 +1587,7 @@ body {
 .footer_logo {
     margin-top: 22px;
 }
+
 
 
 
