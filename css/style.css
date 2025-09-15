@@ -255,6 +255,10 @@ body {
     margin-bottom: 5px;
 }
 
+.submenu li a:hover{
+    font-weight: bold;   
+}
+
 /* 서브메뉴 끝 */
 
 .header_right {
@@ -1587,3 +1591,4 @@ body {
 .footer_logo {
     margin-top: 22px;
 }
+
